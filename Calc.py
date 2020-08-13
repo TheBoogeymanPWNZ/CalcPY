@@ -1,6 +1,6 @@
 import math
 
-stand_calc = 1
+stand_calcс = 1
 discriminant = 2
 
 print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant)
