@@ -14,7 +14,7 @@ if operation == 1:
     multiplic = 3
     division = 4
     print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ", division,)
-    act = int(input("Выберите действие из предложенных: "))
+    act = int(input("Choose an action from the suggested: "))
     if act == 1:
         print(num_1 + num_2)
     elif act == 2:
@@ -38,4 +38,4 @@ elif operation == 2:
     else:
         print("No Roots")
 else:
-    print("Вы ввели несуществующую команду -_-")
+    print("You entered a non-existent command -_-")
