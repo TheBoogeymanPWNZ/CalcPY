@@ -1,24 +1,29 @@
 import math
-num_1 = float(input("Enter the first number: "))
-num_2 = float(input("Enter the second number: "))
 
-addition = 1
-subtract = 2
-multiplic = 3
-division = 4
-discriminant = 5
-print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ", division, "\nDiscriminant", discriminant)
+сalc = 1
+discriminant = 2
 
-act = int(input("Выберите действие из предложенных: "))
-if act == 1:
-    print(num_1 + num_2)
-elif act == 2:
-    print(num_1 - num_2)
-elif act == 3:
-    print(num_1 * num_2)
-elif act == 4:
-    print(num_1 / num_2)
-elif act == 5:
+print("Calculator: ", сalc, "\nDiscriminant: ", discriminant)
+operation = int(input("Select operation: "))
+
+if operation == 1:
+    num_1 = float(input("Enter the first number: "))
+    num_2 = float(input("Enter the second number: "))
+    addition = 1
+    subtract = 2
+    multiplic = 3
+    division = 4
+    print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ", division,)
+    act = int(input("Выберите действие из предложенных: "))
+    if act == 1:
+        print(num_1 + num_2)
+    elif act == 2:
+        print(num_1 - num_2)
+    elif act == 3:
+        print(num_1 * num_2)
+    elif act == 4:
+        print(num_1 / num_2)
+elif operation == 2:
     num_a = float(input("Enter value a = "))
     num_b = float(input("Enter value b = "))
     num_c = float(input("Enter value c = "))
