@@ -23,23 +23,14 @@ elif act == 5:
     num_b = float(input("Enter value b = "))
     num_c = float(input("Enter value c = "))
     Dis = num_b * num_b - 4 * num_a * num_c
-    if Dis < 0:
-        print("No real roots")
-        x1 = -num_b / (2 * num_a)
-        x2 = math.sqrt(abs(Dis)) / (2 * num_a)
-        print("Complex roots of the equation")
-        print(num_a, "x^2 ", num_b, "x + ", num_c, " = 0")
-        if x2 > 0:
-            print(x1, " + ", x2, "i")
-            print(x1, " - ", x2, "i")
-        else:
-            print(x1, " - ", abs(x2), "i")
-            print(x1, " + ", abs(x2), "i")
-    else:
+    if Dis > 0:
         x1 = (-num_b + math.sqrt(Dis)) / (2 * num_a)
         x2 = (-num_b - math.sqrt(Dis)) / (2 * num_a)
-        print("Real roots of the equation")
-        print(num_a, "x^2 + ", num_b, "x + ", num_c, " = 0")
-        print("x1 = ", x1, "x2 = ", x2)
+        print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
+    elif Dis == 0:
+        x = -num_b / (2 * num_a)
+        print("x = %.2f" % x)
+    else:
+        print("No Roots")
 else:
     print("Вы ввели несуществующую команду -_-")
