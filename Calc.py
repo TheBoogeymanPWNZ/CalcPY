@@ -1,9 +1,9 @@
 import math
 
-сalc = 1
+stand_calc = 1
 discriminant = 2
 
-print("Calculator: ", сalc, "\nDiscriminant: ", discriminant)
+print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant)
 operation = int(input("Select operation: "))
 
 if operation == 1:
@@ -13,7 +13,8 @@ if operation == 1:
     subtract = 2
     multiplic = 3
     division = 4
-    print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ", division,)
+    print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ",
+          division)
     act = int(input("Choose an action from the suggested: "))
     if act == 1:
         print(num_1 + num_2)
