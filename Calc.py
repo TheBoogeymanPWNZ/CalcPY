@@ -2,8 +2,9 @@ import math
 
 stand_calc = 1
 discriminant = 2
+logarithm = 3
 
-print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant)
+print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm)
 operation = int(input("Select operation: "))
 
 if operation == 1:
@@ -38,5 +39,22 @@ elif operation == 2:
         print("x = %.2f" % x)
     else:
         print("No Roots")
+elif operation == 3:
+    natur_log = 1
+    decimal_Log = 2
+    log_to_base = 3
+    print("Select the type of logarithm")
+    print("Natural logarithm", natur_log, "\nDecimal logarithm", decimal_Log, "\nlogarithm of b to base a", log_to_base)
+    log = int(input("Select the type of logarithm: "))
+    if log == 1:
+        b = int(input("Enter number b: "))
+        print(math.log(b))
+    elif log == 2:
+        b = int(input("Enter number b: "))
+        print(math.log10(b))
+    elif log == 3:
+        a = int(input("Enter base a: "))
+        b = int(input("Enter number b: "))
+        print(math.log(b, a))
 else:
     print("You entered a non-existent command -_-")
