@@ -47,14 +47,14 @@ elif operation == 3:
     print("Natural logarithm", natur_log, "\nDecimal logarithm", decimal_Log, "\nlogarithm of b to base a", log_to_base)
     log = int(input("Select the type of logarithm: "))
     if log == 1:
-        b = int(input("Enter number b: "))
+        b = float(input("Enter number b: "))
         print(math.log(b))
     elif log == 2:
-        b = int(input("Enter number b: "))
+        b = float(input("Enter number b: "))
         print(math.log10(b))
     elif log == 3:
-        a = int(input("Enter base a: "))
-        b = int(input("Enter number b: "))
+        a = float(input("Enter base a: "))
+        b = float(input("Enter number b: "))
         print(math.log(b, a))
 else:
     print("You entered a non-existent command -_-")
