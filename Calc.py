@@ -66,11 +66,14 @@ elif operation == 4:
     if trig == 1:
         a = float(input("Enter the angle: "))
         print(math.sin(a), " Radians")
+        print(math.degrees(math.sin(a)), " Degrees")
     elif trig == 2:
         a = float(input("Enter the angle: "))
         print(math.cos(a), " Radians")
+        print(math.degrees(math.cos(a)), " Degrees")
     elif trig == 3:
         a = float(input("Enter the angle: "))
         print(math.tan(a), " Radians")
+        print(math.degrees(math.tan(a)), " Degrees")
 else:
     print("You entered a non-existent command -_-")
