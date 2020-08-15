@@ -3,8 +3,9 @@ import math
 stand_calc = 1
 discriminant = 2
 logarithm = 3
+trigonometry = 4
 
-print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm)
+print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, "\nTrigonometry", trigonometry)
 operation = int(input("Select operation: "))
 
 if operation == 1:
@@ -56,5 +57,20 @@ elif operation == 3:
         a = float(input("Enter base a: "))
         b = float(input("Enter number b: "))
         print(math.log(b, a))
+elif operation == 4:
+    sin = 1
+    cos = 2
+    tan = 3
+    print("Sinus: ", sin, "\nCosine: ", cos, "\nTangent: ", tan)
+    trig = int(input("What trigonometric function do you want to find: "))
+    if trig == 1:
+        a = float(input("Enter the angle: "))
+        print(math.sin(a), " Radians")
+    elif trig == 2:
+        a = float(input("Enter the angle: "))
+        print(math.cos(a), " Radians")
+    elif trig == 3:
+        a = float(input("Enter the angle: "))
+        print(math.tan(a), " Radians")
 else:
     print("You entered a non-existent command -_-")
