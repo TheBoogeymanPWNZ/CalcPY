@@ -1,14 +1,22 @@
 import math
 
-stand_calc = 1
-discriminant = 2
-logarithm = 3
-trigonometry = 4
+constant_values = 1
+stand_calc = 2
+discriminant = 3
+logarithm = 4
+trigonometry = 5
 
-print("Calculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, "\nTrigonometry", trigonometry)
+print("Constant: ", constant_values, "\nCalculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, "\nTrigonometry", trigonometry)
 operation = int(input("Select operation: "))
 
 if operation == 1:
+    print('Speed of light in vacuum - c = 2,99792458⋅10^8 м·с^−1',
+    '\n', "Planck's constant - h = 6,626 070 15⋅10^−34 Дж·с",
+    '\n', 'Elementary charge - e = 1,602 176 634⋅10^−19 Кл',
+    '\n', 'Boltzmann constant - k = 1,380 649⋅10^−23 Дж·К^−1',
+    '\n', 'Base of natural logarithm =', math.e,
+    '\n', 'Pi =', math.pi)
+elif operation == 2:
     num_1 = float(input("Enter the first number: "))
     num_2 = float(input("Enter the second number: "))
     addition = 1
@@ -26,7 +34,7 @@ if operation == 1:
         print(num_1 * num_2)
     elif act == 4:
         print(num_1 / num_2)
-elif operation == 2:
+elif operation == 3:
     num_a = float(input("Enter value a = "))
     num_b = float(input("Enter value b = "))
     num_c = float(input("Enter value c = "))
@@ -40,7 +48,7 @@ elif operation == 2:
         print("x = %.2f" % x)
     else:
         print("No Roots")
-elif operation == 3:
+elif operation == 4:
     natur_log = 1
     decimal_Log = 2
     log_to_base = 3
@@ -57,7 +65,7 @@ elif operation == 3:
         a = float(input("Enter base a: "))
         b = float(input("Enter number b: "))
         print(math.log(b, a))
-elif operation == 4:
+elif operation == 5:
     sin = 1
     cos = 2
     tan = 3
