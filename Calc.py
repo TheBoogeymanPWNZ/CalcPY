@@ -5,8 +5,11 @@ stand_calc = 2
 discriminant = 3
 logarithm = 4
 trigonometry = 5
+exponent = 6
 
-print("Constant: ", constant_values, "\nCalculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, "\nTrigonometry", trigonometry)
+
+print("Constant: ", constant_values, "\nCalculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, 
+"\nTrigonometry", trigonometry, "\nExponent", exponent)
 operation = int(input("Select operation: "))
 
 if operation == 1:
@@ -14,7 +17,7 @@ if operation == 1:
     '\n', "Planck's constant - h = 6,626 070 15⋅10^−34 Дж·с",
     '\n', 'Elementary charge - e = 1,602 176 634⋅10^−19 Кл',
     '\n', 'Boltzmann constant - k = 1,380 649⋅10^−23 Дж·К^−1',
-    '\n', 'Base of natural logarithm =', math.e,
+    '\n', "Euler's number =", math.e,
     '\n', 'Pi =', math.pi)
 elif operation == 2:
     num_1 = float(input("Enter the first number: "))
@@ -83,5 +86,8 @@ elif operation == 5:
         a = float(input("Enter the angle: "))
         print(math.tan(a), " Radians")
         print(math.degrees(math.tan(a)), " Degrees")
+elif operation == 6:
+    x = float(input("Enter the number x: "))
+    print(math.exp(x))
 else:
     print("You entered a non-existent command -_-")
