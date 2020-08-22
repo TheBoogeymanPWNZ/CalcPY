@@ -7,18 +7,18 @@ logarithm = 4
 trigonometry = 5
 exponent = 6
 
-
-print("Constant: ", constant_values, "\nCalculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm", logarithm, 
-"\nTrigonometry", trigonometry, "\nExponent", exponent)
+print("Constant: ", constant_values, "\nCalculator: ", stand_calc, "\nDiscriminant: ", discriminant, "\nLogarithm",
+      logarithm,
+      "\nTrigonometry", trigonometry, "\nExponent", exponent)
 operation = int(input("Select operation: "))
 
 if operation == 1:
     print('Speed of light in vacuum - c = 2,99792458⋅10^8 м·с^−1',
-    '\n', "Planck's constant - h = 6,626 070 15⋅10^−34 Дж·с",
-    '\n', 'Elementary charge - e = 1,602 176 634⋅10^−19 Кл',
-    '\n', 'Boltzmann constant - k = 1,380 649⋅10^−23 Дж·К^−1',
-    '\n', "Euler's number =", math.e,
-    '\n', 'Pi =', math.pi)
+          '\n', "Planck's constant - h = 6,626 070 15⋅10^−34 Дж·с",
+          '\n', 'Elementary charge - e = 1,602 176 634⋅10^−19 Кл',
+          '\n', 'Boltzmann constant - k = 1,380 649⋅10^−23 Дж·К^−1',
+          '\n', "Euler's number =", math.e,
+          '\n', 'Pi =', math.pi)
 elif operation == 2:
     num_1 = float(input("Enter the first number: "))
     num_2 = float(input("Enter the second number: "))
