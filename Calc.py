@@ -20,23 +20,26 @@ if operation == 1:
           '\n', "Euler's number =", math.e,
           '\n', 'Pi =', math.pi)
 elif operation == 2:
-    num_1 = float(input("Enter the first number: "))
-    num_2 = float(input("Enter the second number: "))
-    addition = 1
-    subtract = 2
-    multiplic = 3
-    division = 4
-    print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ",
-          division)
-    act = int(input("Choose an action from the suggested: "))
-    if act == 1:
-        print(num_1 + num_2)
-    elif act == 2:
-        print(num_1 - num_2)
-    elif act == 3:
-        print(num_1 * num_2)
-    elif act == 4:
-        print(num_1 / num_2)
+
+    def calc(num_1, num_2):
+        addition = 1
+        subtract = 2
+        multiplic = 3
+        division = 4
+        print("Addition: ", addition, "\nSubtraction: ", subtract, "\nMultiplication: ", multiplic, "\nDivision: ",
+              division)
+        act = int(input("Choose an action from the suggested: "))
+        if act == 1:
+            print(num_1 + num_2)
+        elif act == 2:
+            print(num_1 - num_2)
+        elif act == 3:
+            print(num_1 * num_2)
+        elif act == 4:
+            print(num_1 / num_2)
+
+    calc(float(input("Enter the first number: ")),
+         float(input("Enter the second number: ")))
 elif operation == 3:
     num_a = float(input("Enter value a = "))
     num_b = float(input("Enter value b = "))
@@ -56,7 +59,8 @@ elif operation == 4:
     decimal_Log = 2
     log_to_base = 3
     print("Select the type of logarithm")
-    print("Natural logarithm", natur_log, "\nDecimal logarithm", decimal_Log, "\nlogarithm of b to base a", log_to_base)
+    print("Natural logarithm", natur_log, "\nDecimal logarithm",
+          decimal_Log, "\nlogarithm of b to base a", log_to_base)
     log = int(input("Select the type of logarithm: "))
     if log == 1:
         b = float(input("Enter number b: "))
