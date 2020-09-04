@@ -41,19 +41,19 @@ elif operation == 2:
     calc(float(input("Enter the first number: ")),
          float(input("Enter the second number: ")))
 elif operation == 3:
-    num_a = float(input("Enter value a = "))
-    num_b = float(input("Enter value b = "))
-    num_c = float(input("Enter value c = "))
-    Dis = num_b * num_b - 4 * num_a * num_c
-    if Dis > 0:
-        x1 = (-num_b + math.sqrt(Dis)) / (2 * num_a)
-        x2 = (-num_b - math.sqrt(Dis)) / (2 * num_a)
-        print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
-    elif Dis == 0:
-        x = -num_b / (2 * num_a)
-        print("x = %.2f" % x)
-    else:
-        print("No Roots")
+    def dis(a, b, c):
+        Dis = b * b - 4 * a * c
+        if Dis > 0:
+            x1 = (-b + math.sqrt(Dis)) / (2 * a)
+            x2 = (-b - math.sqrt(Dis)) / (2 * a)
+            print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
+        elif Dis == 0:
+            x = -b / (2 * a)
+            print("x = %.2f" % x)
+        else:
+            print("No Roots")
+    dis(float(input("Enter value a = ")), float(
+        input("Enter value b = ")),  float(input("Enter value c = ")))
 elif operation == 4:
     natur_log = 1
     decimal_Log = 2
