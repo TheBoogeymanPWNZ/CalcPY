@@ -55,43 +55,42 @@ elif operation == 3:
     dis(float(input("Enter value a = ")), float(
         input("Enter value b = ")),  float(input("Enter value c = ")))
 elif operation == 4:
-    natur_log = 1
-    decimal_Log = 2
-    log_to_base = 3
-    print("Select the type of logarithm")
-    print("Natural logarithm", natur_log, "\nDecimal logarithm",
-          decimal_Log, "\nlogarithm of b to base a", log_to_base)
-    log = int(input("Select the type of logarithm: "))
-    if log == 1:
-        b = float(input("Enter number b: "))
-        print(math.log(b))
-    elif log == 2:
-        b = float(input("Enter number b: "))
-        print(math.log10(b))
-    elif log == 3:
-        a = float(input("Enter base a: "))
-        b = float(input("Enter number b: "))
-        print(math.log(b, a))
+    def logar(log):
+        print("Natural logarithm: ", 1, "\nDecimal logarithm: ",
+            2, "\nlogarithm of b to base a: ", 3)
+        log = int(input("Select the type of logarithm: "))
+        if log == 1:
+            b = float(input("Enter number b: "))
+            print(math.log(b))
+        elif log == 2:
+            b = float(input("Enter number b: "))
+            print(math.log10(b))
+        elif log == 3:
+            a = float(input("Enter base a: "))
+            b = float(input("Enter number b: "))
+            print(math.log(b, a))
+    logar(print("Select the type of logarithm"))
+
 elif operation == 5:
-    sin = 1
-    cos = 2
-    tan = 3
+    sin=1
+    cos=2
+    tan=3
     print("Sinus: ", sin, "\nCosine: ", cos, "\nTangent: ", tan)
-    trig = int(input("What trigonometric function do you want to find: "))
+    trig=int(input("What trigonometric function do you want to find: "))
     if trig == 1:
-        a = float(input("Enter the angle: "))
+        a=float(input("Enter the angle: "))
         print(math.sin(a), " Radians")
         print(math.degrees(math.sin(a)), " Degrees")
     elif trig == 2:
-        a = float(input("Enter the angle: "))
+        a=float(input("Enter the angle: "))
         print(math.cos(a), " Radians")
         print(math.degrees(math.cos(a)), " Degrees")
     elif trig == 3:
-        a = float(input("Enter the angle: "))
+        a=float(input("Enter the angle: "))
         print(math.tan(a), " Radians")
         print(math.degrees(math.tan(a)), " Degrees")
 elif operation == 6:
-    x = float(input("Enter the number x: "))
+    x=float(input("Enter the number x: "))
     print(math.exp(x))
 else:
     print("You entered a non-existent command -_-")
