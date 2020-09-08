@@ -96,7 +96,11 @@ while True:
 
         trigonometry(print('Sinus: ', 1, '\nCosine: ', 2, '\nTangent: ', 3))
     elif operation == 6:
-        x = float(input("Enter the number x: "))
-        print(math.exp(x))
+        def exp(x):
+            x = float(input())
+            print(math.exp(x))
+
+
+        exp(print('Enter the number x: '))
     else:
         print("You entered a non-existent command -_-")
